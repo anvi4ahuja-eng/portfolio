@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <!-- ============================================================
+       META & SEO
+       ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alexandra Chen — Strategy & Analytics professional passionate about translating data into decisions. MBA candidate, ex-McKinsey analyst." />
+  <meta name="keywords" content="analytics, consulting, strategy, MBA, portfolio, data" />
+  <meta name="author" content="Alexandra Chen" />
+
+  <!-- Open Graph (for social sharing previews) -->
+  <meta property="og:title" content="Alexandra Chen · Strategy & Analytics" />
+  <meta property="og:description" content="MBA candidate & strategy professional — turning complex data into clear decisions." />
+  <meta property="og:type" content="website" />
+  <!-- Replace og:image with your actual deployed URL + headshot path -->
+  <meta property="og:image" content="assets/headshot.jpg" />
+
+  <title>Alexandra Chen · Strategy & Analytics</title>
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- ============================================================
+       SKIP LINK (Accessibility)
+       ============================================================ -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <header class="nav-header" role="banner">
+    <nav class="nav-container" aria-label="Primary navigation">
+      <!-- Logo / Name -->
+      <a href="#hero" class="nav-logo" aria-label="Alexandra Chen — home">
+        <span class="nav-logo-initials" aria-hidden="true">AC</span>
+        <span class="nav-logo-name">Alexandra Chen</span>
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links" role="list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Right Controls -->
+      <div class="nav-controls">
+        <!-- Dark Mode Toggle -->
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Toggle dark mode"
+          aria-pressed="false"
+          title="Toggle dark mode"
+        >
+          <!-- Sun icon (shown in dark mode) -->
+          <svg class="icon icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <!-- Moon icon (shown in light mode) -->
+          <svg class="icon icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+
+        <!-- Resume CTA -->
+        <a href="assets/resume.pdf" download class="nav-resume-btn" aria-label="Download resume PDF">
+          Resume ↓
+        </a>
+
+        <!-- Mobile Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation" aria-hidden="true">
+      <ul class="mobile-menu-links" role="list">
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#experience" class="mobile-link">Experience</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+        <li><a href="assets/resume.pdf" download class="mobile-link mobile-link-cta">Download Resume</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       MAIN CONTENT
+       ============================================================ -->
+  <main id="main-content">
+
+    <!-- ── HERO ─────────────────────────────────────────────── -->
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <div class="container hero-content">
+        <!-- Eyebrow label -->
+        <p class="hero-eyebrow reveal">Available for Summer 2025 internships</p>
+
+        <!-- Main headline — weight contrast is the signature -->
+        <h1 class="hero-heading" id="hero-heading">
+          <span class="reveal reveal-delay-1">Turning complexity</span>
+          <span class="hero-heading-accent reveal reveal-delay-2">into clarity.</span>
+        </h1>
+
+        <p class="hero-sub reveal reveal-delay-3">
+          I'm <strong>Alexandra Chen</strong> — an MBA candidate at Wharton and former strategy analyst
+          helping organizations make sharper decisions through data, frameworks, and clear thinking.
+        </p>
+
+        <div class="hero-actions reveal reveal-delay-4">
+          <a href="#projects" class="btn btn-primary">View my work</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+
+        <!-- Social proof strip -->
+        <div class="hero-badges reveal reveal-delay-5" aria-label="Affiliations">
+          <span class="badge">Wharton MBA</span>
+          <span class="badge-divider" aria-hidden="true">·</span>
+          <span class="badge">Ex-McKinsey</span>
+          <span class="badge-divider" aria-hidden="true">·</span>
+          <span class="badge">People Analytics</span>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator" aria-hidden="true">
+        <span class="scroll-indicator-line"></span>
+        <span class="scroll-indicator-label">scroll</span>
+      </div>
+    </section>
+
+    <!-- ── ABOUT ─────────────────────────────────────────────── -->
+    <section class="section about" id="about" aria-labelledby="about-heading">
+      <div class="container about-grid">
+
+        <!-- Photo column -->
+        <!-- 📸 ASSET: Place your headshot at assets/headshot.jpg (recommended: 600×700px, professional, well-lit) -->
+        <div class="about-photo-wrap reveal">
+          <div class="about-photo-frame">
+            <img
+              src="assets/headshot.jpg"
+              alt="Alexandra Chen — professional headshot"
+              class="about-photo"
+              width="480"
+              height="560"
+              loading="lazy"
+              onerror="this.parentElement.classList.add('photo-placeholder')"
+            />
+          </div>
+          <div class="about-photo-badge" aria-hidden="true">
+            <span>Open to work</span>
+            <span class="status-dot"></span>
+          </div>
+        </div>
+
+        <!-- Text column -->
+        <div class="about-text">
+          <p class="section-eyebrow reveal">About me</p>
+          <h2 class="section-heading reveal" id="about-heading">Strategy thinker.<br/>People person.<br/>Data nerd.</h2>
+
+          <div class="about-body reveal">
+            <p>
+              I graduated top of my class from UC Berkeley with a degree in Applied Mathematics and Economics, 
+              then spent three years at McKinsey & Company advising Fortune 500 clients on organizational 
+              redesign, workforce planning, and analytics transformation.
+            </p>
+            <p>
+              Now pursuing my MBA at Wharton with a concentration in People Analytics and Strategic Management, 
+              I'm looking for summer internship opportunities in management consulting, HR tech, or 
+              corporate strategy where I can blend quantitative rigor with human-centered thinking.
+            </p>
+            <p>
+              Outside work, I coach a university debate team, run half-marathons slowly, and 
+              am halfway through learning Mandarin.
+            </p>
+          </div>
+
+          <!-- Competencies -->
+          <ul class="skills-list reveal" aria-label="Core skills">
+            <li class="skill-tag">Strategic Frameworks</li>
+            <li class="skill-tag">People Analytics</li>
+            <li class="skill-tag">Data Visualization</li>
+            <li class="skill-tag">Excel / Power BI</li>
+            <li class="skill-tag">Python (pandas)</li>
+            <li class="skill-tag">Stakeholder Management</li>
+            <li class="skill-tag">Organizational Design</li>
+            <li class="skill-tag">SQL</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EXPERIENCE ────────────────────────────────────────── -->
+    <section class="section experience" id="experience" aria-labelledby="experience-heading">
+      <div class="container">
+        <div class="section-intro">
+          <p class="section-eyebrow reveal">Work history</p>
+          <h2 class="section-heading reveal" id="experience-heading">Where I've been</h2>
+        </div>
+
+        <!-- Timeline -->
+        <ol class="timeline" aria-label="Career timeline">
+
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="timeline-role">MBA Candidate — Strategy & People Analytics</h3>
+                  <p class="timeline-org">The Wharton School, University of Pennsylvania</p>
+                </div>
+                <time class="timeline-period" datetime="2023/2025">2023 – Present</time>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Wharton Graduate Association VP of Finance; managing $1.2M annual budget</li>
+                <li>People Analytics Club co-lead; organized 3 industry panels reaching 400+ students</li>
+                <li>Case competition finalist (Deloitte HR Transformation Challenge 2024)</li>
+              </ul>
+              <div class="timeline-tags" aria-label="Skills used">
+                <span class="tag">Leadership</span>
+                <span class="tag">Analytics</span>
+                <span class="tag">Finance</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="timeline-role">Strategy Analyst → Senior Analyst</h3>
+                  <p class="timeline-org">McKinsey & Company, San Francisco</p>
+                </div>
+                <time class="timeline-period" datetime="2020/2023">2020 – 2023</time>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Led workforce planning workstream for 12,000-person retail client, reducing attrition by 18%</li>
+                <li>Built a regression-based attrition prediction model adopted across 3 client engagements</li>
+                <li>Facilitated C-suite workshops on org design for two Fortune 100 companies</li>
+                <li>Mentored 4 first-year analysts as part of firm's informal coaching program</li>
+              </ul>
+              <div class="timeline-tags" aria-label="Skills used">
+                <span class="tag">Consulting</span>
+                <span class="tag">Python</span>
+                <span class="tag">Org Design</span>
+                <span class="tag">Facilitation</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="timeline-role">People Analytics Intern</h3>
+                  <p class="timeline-org">Salesforce, San Francisco</p>
+                </div>
+                <time class="timeline-period" datetime="2019">Summer 2019</time>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Analyzed engagement survey data for 15,000 employees using R and Tableau</li>
+                <li>Delivered insight dashboard adopted by HR Business Partners across 4 regions</li>
+              </ul>
+              <div class="timeline-tags" aria-label="Skills used">
+                <span class="tag">R</span>
+                <span class="tag">Tableau</span>
+                <span class="tag">HR Analytics</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="timeline-role">B.S. Applied Mathematics & Economics, Honors</h3>
+                  <p class="timeline-org">University of California, Berkeley</p>
+                </div>
+                <time class="timeline-period" datetime="2016/2020">2016 – 2020</time>
+              </div>
+              <ul class="timeline-bullets">
+                <li>GPA 3.92 · Phi Beta Kappa · Dean's List every semester</li>
+                <li>Senior thesis: "Predicting Employee Churn via NLP-Based Sentiment Analysis"</li>
+              </ul>
+              <div class="timeline-tags" aria-label="Skills used">
+                <span class="tag">Mathematics</span>
+                <span class="tag">Economics</span>
+                <span class="tag">NLP</span>
+              </div>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ── PROJECTS ──────────────────────────────────────────── -->
+    <section class="section projects" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-intro">
+          <p class="section-eyebrow reveal">Selected work</p>
+          <h2 class="section-heading reveal" id="projects-heading">Projects & case studies</h2>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project Card 1 -->
+          <!-- 📸 ASSET: Place screenshot at assets/project-attrition.jpg (recommended: 800×500px) -->
+          <article class="project-card reveal" aria-labelledby="proj1-title">
+            <div class="project-card-image-wrap">
+              <img
+                src="assets/project-attrition.jpg"
+                alt="Dashboard screenshot — Attrition Prediction Model"
+                class="project-card-image"
+                loading="lazy"
+                onerror="this.parentElement.classList.add('img-placeholder')"
+              />
+              <span class="project-card-badge">Analytics</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title" id="proj1-title">Employee Attrition Prediction Model</h3>
+              <p class="project-card-desc">
+                Built a logistic regression and random forest ensemble model using Python and scikit-learn, 
+                predicting 12-month voluntary attrition with 84% accuracy. Deployed as an HR dashboard 
+                adopted across 3 client engagements at McKinsey.
+              </p>
+              <ul class="project-card-tags" aria-label="Tools used">
+                <li>Python</li><li>scikit-learn</li><li>Power BI</li>
+              </ul>
+            </div>
+            <div class="project-card-footer">
+              <a href="#" class="project-link" aria-label="View case study for Attrition Prediction Model">
+                View case study <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project Card 2 -->
+          <!-- 📸 ASSET: Place screenshot at assets/project-engagement.jpg -->
+          <article class="project-card reveal" aria-labelledby="proj2-title">
+            <div class="project-card-image-wrap">
+              <img
+                src="assets/project-engagement.jpg"
+                alt="Engagement survey insight dashboard"
+                class="project-card-image"
+                loading="lazy"
+                onerror="this.parentElement.classList.add('img-placeholder')"
+              />
+              <span class="project-card-badge">HR Tech</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title" id="proj2-title">Engagement Insights Dashboard</h3>
+              <p class="project-card-desc">
+                Designed and built an interactive Tableau dashboard translating 15,000-employee 
+                engagement survey data into actionable regional insights. Reduced HR reporting time 
+                by 60% and flagged 3 high-risk teams for early intervention.
+              </p>
+              <ul class="project-card-tags" aria-label="Tools used">
+                <li>Tableau</li><li>R</li><li>SQL</li>
+              </ul>
+            </div>
+            <div class="project-card-footer">
+              <a href="#" class="project-link" aria-label="View case study for Engagement Dashboard">
+                View case study <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project Card 3 -->
+          <!-- 📸 ASSET: Place screenshot at assets/project-orgdesign.jpg -->
+          <article class="project-card reveal" aria-labelledby="proj3-title">
+            <div class="project-card-image-wrap">
+              <img
+                src="assets/project-orgdesign.jpg"
+                alt="Organizational redesign framework slide"
+                class="project-card-image"
+                loading="lazy"
+                onerror="this.parentElement.classList.add('img-placeholder')"
+              />
+              <span class="project-card-badge">Strategy</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title" id="proj3-title">Retail Workforce Restructuring</h3>
+              <p class="project-card-desc">
+                Led the workforce planning workstream for a 12,000-person national retailer facing 
+                margin pressure. Designed a span-of-control optimization framework that reduced 
+                management layers by 2 and delivered $8M in annualized savings.
+              </p>
+              <ul class="project-card-tags" aria-label="Tools used">
+                <li>Excel</li><li>Org Modeling</li><li>Stakeholder Mgmt</li>
+              </ul>
+            </div>
+            <div class="project-card-footer">
+              <a href="#" class="project-link" aria-label="View case study for Retail Workforce Restructuring">
+                View case study <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project Card 4 -->
+          <!-- 📸 ASSET: Place screenshot at assets/project-thesis.jpg -->
+          <article class="project-card reveal" aria-labelledby="proj4-title">
+            <div class="project-card-image-wrap">
+              <img
+                src="assets/project-thesis.jpg"
+                alt="NLP sentiment analysis — thesis visualization"
+                class="project-card-image"
+                loading="lazy"
+                onerror="this.parentElement.classList.add('img-placeholder')"
+              />
+              <span class="project-card-badge">Research</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-card-title" id="proj4-title">NLP-Based Churn Prediction (Thesis)</h3>
+              <p class="project-card-desc">
+                Senior honors thesis applying BERT-based sentiment analysis to Glassdoor review text 
+                to predict employee churn 6 months ahead of official departure. Achieved AUC of 0.79 
+                on held-out test set. Awarded highest honors.
+              </p>
+              <ul class="project-card-tags" aria-label="Tools used">
+                <li>Python</li><li>BERT</li><li>NLP</li><li>Research</li>
+              </ul>
+            </div>
+            <div class="project-card-footer">
+              <a href="#" class="project-link" aria-label="View research paper for NLP Churn Prediction">
+                Read paper <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ───────────────────────────────────────────── -->
+    <section class="section contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container contact-inner">
+
+        <div class="contact-text reveal">
+          <p class="section-eyebrow">Let's talk</p>
+          <h2 class="section-heading" id="contact-heading">Open to the right<br/>conversations.</h2>
+          <p class="contact-sub">
+            Whether you're hiring for a summer internship, exploring a collaboration, 
+            or just want to nerd out about org design — my inbox is open.
+          </p>
+
+          <!-- Resume Download -->
+          <a href="assets/resume.pdf" download class="btn btn-primary resume-download" aria-label="Download Alexandra Chen's resume PDF">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+        </div>
+
+        <!-- Contact cards -->
+        <div class="contact-links reveal">
+
+          <a href="mailto:alex.chen@wharton.upenn.edu" class="contact-card" aria-label="Send email to Alexandra Chen">
+            <div class="contact-card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-card-body">
+              <p class="contact-card-label">Email</p>
+              <p class="contact-card-value">alex.chen@wharton.upenn.edu</p>
+            </div>
+            <span class="contact-card-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="https://linkedin.com/in/alexandrachen" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Alexandra Chen on LinkedIn (opens in new tab)">
+            <div class="contact-card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div class="contact-card-body">
+              <p class="contact-card-label">LinkedIn</p>
+              <p class="contact-card-value">linkedin.com/in/alexandrachen</p>
+            </div>
+            <span class="contact-card-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="https://github.com/alex-chen" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Alexandra Chen on GitHub (opens in new tab)">
+            <div class="contact-card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </div>
+            <div class="contact-card-body">
+              <p class="contact-card-label">GitHub</p>
+              <p class="contact-card-value">github.com/alex-chen</p>
+            </div>
+            <span class="contact-card-arrow" aria-hidden="true">→</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p class="footer-name">Alexandra Chen</p>
+        <p class="footer-tagline">Strategy · Analytics · People</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#about" class="footer-link">About</a>
+        <a href="#experience" class="footer-link">Experience</a>
+        <a href="#projects" class="footer-link">Projects</a>
+        <a href="#contact" class="footer-link">Contact</a>
+      </nav>
+      <p class="footer-copy">
+        <span>© <span id="footerYear"></span> Alexandra Chen.</span>
+        <span>Built with care.</span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
