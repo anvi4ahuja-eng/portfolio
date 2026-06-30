@@ -266,3 +266,29 @@ if (yrEl) yrEl.textContent = new Date().getFullYear();
     });
   });
 })();
+
+
+/* ─────────────────────────────────────────────────────────────
+   READING PROGRESS BAR
+   Only runs on article pages (body.article-page)
+───────────────────────────────────────────────────────────── */
+(function initReadingProgress() {
+  if (!document.body.classList.contains('article-page')) return;
+
+  const bar = document.querySelector('.reading-progress-fill');
+  if (!bar) return;
+
+  function updateProgress() {
+    const doc    = document.documentElement;
+    const body   = document.body;
+    const top    = doc.scrollTop  || body.scrollTop;
+    const height = Math.max(
+      body.scrollHeight, doc.scrollHeight,
+      body.offsetHeight, doc.offsetHeight
+    ) - doc.clientHeight;
+    bar.style.width = height > 0 ? `${Math.min(100, (top / height) * 100)}%` : '0%';
+  }
+
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  updateProgress();
+})();

@@ -33,7 +33,7 @@
         <ul class="nav-links" role="list">
           <li><a href="#about"      class="nav-link">About</a></li>
           <li><a href="#work"       class="nav-link">Work</a></li>
-          <li><a href="#journal"    class="nav-link">Journal</a></li>
+          <li><a href="#insights"   class="nav-link">Insights</a></li>
           <li><a href="#experience" class="nav-link">Experience</a></li>
           <li><a href="#contact"    class="nav-link">Contact</a></li>
         </ul>
@@ -58,7 +58,7 @@
         <ul role="list">
           <li><a href="#about"      class="mob-link">About</a></li>
           <li><a href="#work"       class="mob-link">Work</a></li>
-          <li><a href="#journal"    class="mob-link">Journal</a></li>
+          <li><a href="#insights"   class="mob-link">Insights</a></li>
           <li><a href="#experience" class="mob-link">Experience</a></li>
           <li><a href="#contact"    class="mob-link">Contact</a></li>
           <li>
@@ -331,171 +331,182 @@
     </section>
 
     <!-- ─────────────────────────────────────────────────
-         JOURNAL — Editorial publication layout
-         To add a new article: duplicate any <article class="jc">
-         block, update the image URL, category, date, read time,
-         title and description. Layout is automatic.
+         INSIGHTS — Editorial article section
+         ═══════════════════════════════════════════════
+         HOW TO ADD A NEW ARTICLE (takes ~5 minutes):
+         ──────────────────────────────────────────────
+         1. Copy articles/article-template.html
+         2. Rename it: articles/your-article-slug.html
+         3. Fill in the title, content, images, date
+         4. Copy the "NEWEST ARTICLE CARD" block below,
+            paste it BEFORE the current featured card,
+            update href, image, category, date, read
+            time, title and teaser. That's it.
+            The layout handles everything automatically.
+         ═══════════════════════════════════════════════
     ───────────────────────────────────────────────── -->
-    <section class="section journal-section" id="journal" aria-labelledby="journal-heading">
+    <section class="section insights-section" id="insights" aria-labelledby="insights-heading">
       <div class="container">
 
         <header class="section-header reveal">
-          <p class="eyebrow">Business Journal</p>
-          <h2 class="display-heading" id="journal-heading">Thinking out loud.</h2>
+          <p class="eyebrow">Insights</p>
+          <h2 class="display-heading" id="insights-heading">Thinking out loud.</h2>
           <p class="section-intro reveal delay-1">
-            Caselets and observations on marketing, brand strategy
-            and how businesses actually work.
+            Articles on marketing, brand strategy and the business decisions
+            that actually matter.
           </p>
         </header>
 
-        <!-- Featured article — editorial wide format -->
-        <article class="j-featured reveal" aria-labelledby="j1-title">
-          <div class="j-feat-img-wrap">
-            <!-- Editorial: premium Apple product — James Yarema, Unsplash -->
+        <!-- ═══════════════════════════════════════════
+             NEWEST ARTICLE — always the featured card
+             When you publish a new article, move the
+             current featured card into .i-grid below,
+             and paste your new article here.
+        ═══════════════════════════════════════════ -->
+        <a href="articles/why-do-we-trust-brands.html"
+           class="i-featured reveal"
+           aria-labelledby="ins1-title">
+          <div class="i-feat-img-wrap">
+            <!--
+              Image: hands reaching across — trust, connection, warmth.
+              Photo by Cytonn Photography on Unsplash (editorial, no handshakes)
+              Replace src with your own image when needed.
+            -->
             <img
-              src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1400&q=80&auto=format&fit=crop"
-              alt="Apple product on dark surface — premium brand design"
-              class="j-feat-img"
-              loading="lazy"
+              src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1400&q=80&auto=format&fit=crop&crop=center"
+              alt="Two people building connection — the foundation of brand trust"
+              class="i-feat-img"
+              loading="eager"
             />
           </div>
-          <div class="j-feat-body">
-            <div class="j-meta">
-              <span class="j-cat">Brand Strategy</span>
-              <span class="j-sep" aria-hidden="true">·</span>
-              <time class="j-time" datetime="2024-12">Dec 2024</time>
-              <span class="j-sep" aria-hidden="true">·</span>
-              <span class="j-read">5 min read</span>
+          <div class="i-feat-body">
+            <div class="i-meta">
+              <span class="i-cat">Brand Strategy</span>
+              <span class="i-sep" aria-hidden="true">·</span>
+              <time class="i-date" datetime="2025-07-01">1 July 2025</time>
+              <span class="i-sep" aria-hidden="true">·</span>
+              <span class="i-read">7 min read</span>
             </div>
-            <h3 class="j-feat-title" id="j1-title">Why Apple Feels Premium</h3>
-            <p class="j-feat-desc">
-              Apple doesn't sell products. It sells a feeling — of intelligence,
-              of belonging to something thoughtfully made. This is about restraint
-              as a brand strategy, and why what Apple removes matters more than
-              what it keeps.
+            <h3 class="i-feat-title" id="ins1-title">
+              Why Do We Trust Brands We've Never Met?
+            </h3>
+            <p class="i-feat-teaser">
+              Every day, we unlock our phones, search our most personal questions online,
+              and buy products from companies we'll never speak to. At some point, brands
+              stopped being names and became shortcuts for trust. This article explores
+              how that happens — and why the brands that earn it think very differently
+              from those that only try to project it.
             </p>
-            <a href="#" class="btn btn-primary btn-sm" aria-label="Read: Why Apple Feels Premium">
-              Read Article
-            </a>
+            <span class="i-read-link" aria-hidden="true">Read Article →</span>
           </div>
-        </article>
+        </a>
 
-        <!-- Journal grid -->
-        <div class="j-grid">
+        <!-- ═══════════════════════════════════════════
+             OLDER ARTICLES GRID
+             Add older articles here as new ones are
+             published. Newest at top-left.
+        ═══════════════════════════════════════════ -->
+        <div class="i-grid">
 
-          <!-- Article 2 -->
-          <article class="jc reveal" aria-labelledby="j2-title">
-            <div class="jc-img-wrap">
-              <!-- Editorial: coffee cup, warm tones — Tyler Nix, Unsplash -->
+          <!-- Placeholder cards — replace with real articles as you publish -->
+
+          <!-- Future Article Slot 1 -->
+          <article class="ic reveal" aria-labelledby="ins2-title">
+            <div class="ic-img-wrap">
               <img
                 src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80&auto=format&fit=crop"
-                alt="Premium coffee cup — Starbucks pricing and brand value"
-                class="jc-img"
+                alt="Premium coffee — pricing as a brand signal"
+                class="ic-img"
                 loading="lazy"
               />
             </div>
-            <div class="jc-body">
-              <div class="j-meta">
-                <span class="j-cat">Pricing</span>
-                <span class="j-sep" aria-hidden="true">·</span>
-                <span class="j-read">4 min read</span>
+            <div class="ic-body">
+              <div class="i-meta">
+                <span class="i-cat">Pricing Strategy</span>
+                <span class="i-sep" aria-hidden="true">·</span>
+                <span class="i-read">Coming soon</span>
               </div>
-              <h3 class="jc-title" id="j2-title">Starbucks' Pricing Strategy</h3>
-              <p class="jc-desc">
-                How a coffee company convinced the world to pay four times the
-                market rate — and why the price itself is part of what they're
-                selling.
+              <h3 class="ic-title" id="ins2-title">Starbucks' Pricing Strategy</h3>
+              <p class="ic-teaser">
+                How a coffee company convinced the world to pay four times the market
+                rate — and why the price itself became part of the product.
               </p>
-              <a href="#" class="j-link" aria-label="Read: Starbucks Pricing Strategy">
-                Read Article →
-              </a>
+              <span class="i-coming">Article coming soon</span>
             </div>
           </article>
 
-          <!-- Article 3 -->
-          <article class="jc reveal delay-1" aria-labelledby="j3-title">
-            <div class="jc-img-wrap">
-              <!-- Editorial: city skyline at dusk — Unsplash -->
-              <img
-                src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&q=80&auto=format&fit=crop"
-                alt="Urban cityscape — competitive market strategy"
-                class="jc-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="jc-body">
-              <div class="j-meta">
-                <span class="j-cat">Competitive Strategy</span>
-                <span class="j-sep" aria-hidden="true">·</span>
-                <span class="j-read">6 min read</span>
-              </div>
-              <h3 class="jc-title" id="j3-title">Zomato vs Swiggy</h3>
-              <p class="jc-desc">
-                Two companies with almost identical services and very different
-                personalities. On brand voice as competitive strategy in
-                commodity markets.
-              </p>
-              <a href="#" class="j-link" aria-label="Read: Zomato vs Swiggy">
-                Read Article →
-              </a>
-            </div>
-          </article>
-
-          <!-- Article 4 -->
-          <article class="jc reveal" aria-labelledby="j4-title">
-            <div class="jc-img-wrap">
-              <!-- Editorial: warm countryside morning — Unsplash -->
-              <img
-                src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=800&q=80&auto=format&fit=crop"
-                alt="Warm rural morning — heritage brand trust"
-                class="jc-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="jc-body">
-              <div class="j-meta">
-                <span class="j-cat">Brand Trust</span>
-                <span class="j-sep" aria-hidden="true">·</span>
-                <span class="j-read">5 min read</span>
-              </div>
-              <h3 class="jc-title" id="j4-title">How Amul Built Trust</h3>
-              <p class="jc-desc">
-                Seven decades, one cooperative, millions of households. What
-                Amul understood about consistency and institutional trust that
-                most brands miss entirely.
-              </p>
-              <a href="#" class="j-link" aria-label="Read: How Amul Built Trust">
-                Read Article →
-              </a>
-            </div>
-          </article>
-
-          <!-- Article 5 -->
-          <article class="jc reveal delay-1" aria-labelledby="j5-title">
-            <div class="jc-img-wrap">
-              <!-- Editorial: Nike sneakers clean — Chander R, Unsplash -->
+          <!-- Future Article Slot 2 -->
+          <article class="ic reveal delay-1" aria-labelledby="ins3-title">
+            <div class="ic-img-wrap">
               <img
                 src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&q=80&auto=format&fit=crop"
-                alt="Red Nike sneaker — brand identity and belief systems"
-                class="jc-img"
+                alt="Nike sneaker — brand identity built on belief"
+                class="ic-img"
                 loading="lazy"
               />
             </div>
-            <div class="jc-body">
-              <div class="j-meta">
-                <span class="j-cat">Marketing</span>
-                <span class="j-sep" aria-hidden="true">·</span>
-                <span class="j-read">4 min read</span>
+            <div class="ic-body">
+              <div class="i-meta">
+                <span class="i-cat">Marketing</span>
+                <span class="i-sep" aria-hidden="true">·</span>
+                <span class="i-read">Coming soon</span>
               </div>
-              <h3 class="jc-title" id="j5-title">Lessons from Nike Branding</h3>
-              <p class="jc-desc">
+              <h3 class="ic-title" id="ins3-title">Lessons from Nike Branding</h3>
+              <p class="ic-teaser">
                 Nike's most powerful tool isn't its product or its budget — it's a
-                three-word belief system. On building a brand that stands for
-                something specific.
+                three-word belief that turned a shoe company into a movement.
               </p>
-              <a href="#" class="j-link" aria-label="Read: Lessons from Nike Branding">
-                Read Article →
-              </a>
+              <span class="i-coming">Article coming soon</span>
+            </div>
+          </article>
+
+          <!-- Future Article Slot 3 -->
+          <article class="ic reveal" aria-labelledby="ins4-title">
+            <div class="ic-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=800&q=80&auto=format&fit=crop"
+                alt="Rural morning — heritage and consistency in brand trust"
+                class="ic-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="ic-body">
+              <div class="i-meta">
+                <span class="i-cat">Brand Trust</span>
+                <span class="i-sep" aria-hidden="true">·</span>
+                <span class="i-read">Coming soon</span>
+              </div>
+              <h3 class="ic-title" id="ins4-title">How Amul Built Trust</h3>
+              <p class="ic-teaser">
+                Seven decades. One cooperative. Millions of households. What Amul
+                understood about consistency that most brands never figure out.
+              </p>
+              <span class="i-coming">Article coming soon</span>
+            </div>
+          </article>
+
+          <!-- Future Article Slot 4 -->
+          <article class="ic reveal delay-1" aria-labelledby="ins5-title">
+            <div class="ic-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&q=80&auto=format&fit=crop"
+                alt="Urban city — competitive strategy in crowded markets"
+                class="ic-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="ic-body">
+              <div class="i-meta">
+                <span class="i-cat">Competitive Strategy</span>
+                <span class="i-sep" aria-hidden="true">·</span>
+                <span class="i-read">Coming soon</span>
+              </div>
+              <h3 class="ic-title" id="ins5-title">Zomato vs Swiggy</h3>
+              <p class="ic-teaser">
+                Two companies, nearly identical services, very different personalities.
+                What brand voice actually does in a market where the product is the same.
+              </p>
+              <span class="i-coming">Article coming soon</span>
             </div>
           </article>
 
