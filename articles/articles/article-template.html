@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--
+    ══════════════════════════════════════════════════════════════
+    ARTICLE TEMPLATE — How to publish a new article
+    ══════════════════════════════════════════════════════════════
+    1. Copy this file. Rename it: articles/your-article-slug.html
+    2. Fill in every EDIT: comment below (there are ~12 of them)
+    3. In index.html, go to the #insights section:
+       a. Move the current .i-featured block into .i-grid
+       b. Paste the NEW FEATURED CARD snippet at the top of
+          the section (see snippet at bottom of this file)
+    4. Done. The whole site updates automatically.
+    ══════════════════════════════════════════════════════════════
+  -->
+
+  <!-- EDIT: Update title and description -->
+  <meta name="description" content="ARTICLE DESCRIPTION HERE — By Anvi Ahuja." />
+  <meta name="author" content="Anvi Ahuja" />
+  <meta property="og:title" content="ARTICLE TITLE HERE — Anvi Ahuja" />
+  <meta property="og:description" content="ARTICLE DESCRIPTION HERE" />
+  <meta property="og:type" content="article" />
+  <meta property="article:author" content="Anvi Ahuja" />
+  <!-- EDIT: Update published date (YYYY-MM-DD) -->
+  <meta property="article:published_time" content="YYYY-MM-DD" />
+
+  <!-- EDIT: Update page title -->
+  <title>ARTICLE TITLE HERE — Anvi Ahuja</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body class="article-page">
+
+  <a class="skip-link" href="#article-content">Skip to article</a>
+
+  <div class="reading-progress" aria-hidden="true">
+    <div class="reading-progress-fill" id="readingProgress"></div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-wordmark" aria-label="Anvi Ahuja — back to portfolio">
+        Anvi Ahuja
+      </a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links" role="list">
+          <li><a href="../index.html#about"      class="nav-link">About</a></li>
+          <li><a href="../index.html#work"       class="nav-link">Work</a></li>
+          <li><a href="../index.html#insights"   class="nav-link active">Insights</a></li>
+          <li><a href="../index.html#experience" class="nav-link">Experience</a></li>
+          <li><a href="../index.html#contact"    class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-controls">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun"  width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileNav">
+          <span class="ham-bar"></span>
+          <span class="ham-bar"></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <nav aria-label="Mobile navigation">
+        <ul role="list">
+          <li><a href="../index.html#about"      class="mob-link">About</a></li>
+          <li><a href="../index.html#work"       class="mob-link">Work</a></li>
+          <li><a href="../index.html#insights"   class="mob-link">Insights</a></li>
+          <li><a href="../index.html#experience" class="mob-link">Experience</a></li>
+          <li><a href="../index.html#contact"    class="mob-link">Contact</a></li>
+          <li>
+            <a href="../assets/resume.pdf" download class="mob-link mob-resume">
+              Download Resume
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="article-content">
+
+    <div class="article-hero">
+      <div class="article-hero-inner">
+        <a href="../index.html#insights" class="article-back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+          All Insights
+        </a>
+      </div>
+    </div>
+
+    <header class="article-hero">
+      <div class="article-hero-inner">
+
+        <div class="article-eyebrow">
+          <!-- EDIT: Category name -->
+          <span class="article-cat">CATEGORY</span>
+          <span class="article-sep" aria-hidden="true">·</span>
+          <!-- EDIT: datetime="YYYY-MM-DD" and display date -->
+          <time class="article-date" datetime="YYYY-MM-DD">DD Month YYYY</time>
+          <span class="article-sep" aria-hidden="true">·</span>
+          <!-- Reading time is auto-calculated by JS from article content -->
+          <span class="article-readtime" id="readTime">— min read</span>
+        </div>
+
+        <!-- EDIT: Article title -->
+        <h1 class="article-title">
+          YOUR ARTICLE TITLE HERE
+        </h1>
+
+        <!-- EDIT: One or two sentence subtitle -->
+        <p class="article-subtitle">
+          YOUR SUBTITLE — one or two sentences that complete the title and give
+          the reader enough to decide they want to continue.
+        </p>
+
+        <div class="article-byline">
+          <div class="byline-avatar" aria-hidden="true">A</div>
+          <div class="byline-text">
+            <span class="byline-name">Anvi Ahuja</span>
+            <span class="byline-role">Marketing &amp; Business Strategy</span>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <!--
+      IMAGE SLOT 1 — Cover image
+      EDIT: Replace src with your Unsplash URL or your own image.
+      Recommended dimensions: 2400×900px
+      Guidelines: architectural, editorial, brand-related, minimal.
+      No stock photos of people in meetings.
+    -->
+    <div class="article-cover-wrap">
+      <img
+        src="https://images.unsplash.com/photo-REPLACE-WITH-REAL-ID?w=2400&q=85&auto=format&fit=crop"
+        alt="EDIT: Descriptive alt text for your cover image"
+        class="article-cover"
+        loading="eager"
+        width="2400"
+        height="900"
+      />
+    </div>
+
+    <div class="article-body">
+      <article class="prose" id="articleText" aria-label="Article content">
+
+        <!-- ══════════════════════════════════════════════
+             EDIT: Your article content goes below.
+             Use these building blocks:
+
+             PARAGRAPH:
+             <p>Your text here.</p>
+
+             SECTION HEADING:
+             <h2>Section Title</h2>
+
+             SUBSECTION HEADING:
+             <h3>Subsection Title</h3>
+
+             HIGHLIGHT BLOCK (for important quotes/ideas):
+             <div class="highlight-block" role="note">
+               <p>"Your pullquote or key idea here."</p>
+             </div>
+
+             MID-ARTICLE IMAGE (IMAGE SLOT 2):
+             <div class="prose-img-wrap">
+               <img
+                 src="https://images.unsplash.com/photo-REPLACE?w=1400&q=80&auto=format&fit=crop"
+                 alt="EDIT: alt text"
+                 class="prose-img"
+                 loading="lazy"
+                 width="1400"
+                 height="787"
+               />
+               <p class="prose-img-caption">EDIT: Optional caption.</p>
+             </div>
+
+             LATE-ARTICLE IMAGE (IMAGE SLOT 3):
+             Same as above — add a third image if it helps.
+        ══════════════════════════════════════════════ -->
+
+        <p>Opening paragraph — start with something concrete, not an abstraction.</p>
+
+        <h2>First Section</h2>
+
+        <p>Body text here.</p>
+
+        <div class="highlight-block" role="note">
+          <p>"A key idea, stated simply and memorably."</p>
+        </div>
+
+        <p>More body text.</p>
+
+        <h2>Second Section</h2>
+
+        <p>Body text here.</p>
+
+        <!-- IMAGE SLOT 2 -->
+        <div class="prose-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-REPLACE?w=1400&q=80&auto=format&fit=crop"
+            alt="EDIT: alt text"
+            class="prose-img"
+            loading="lazy"
+            width="1400"
+            height="787"
+          />
+          <p class="prose-img-caption">EDIT: Optional caption.</p>
+        </div>
+
+        <h2>Closing Thought</h2>
+
+        <p>Final paragraph — end on something that stays with the reader.</p>
+
+        <div class="highlight-block" role="note">
+          <p>"EDIT: A closing thought that makes the reader reflect."</p>
+        </div>
+
+      </article>
+
+      <!-- ── Key Takeaways — EDIT these ── -->
+      <aside class="article-takeaways" aria-label="Key takeaways">
+        <p class="takeaways-label">Key Takeaways</p>
+        <ul class="takeaways-list">
+          <!-- EDIT: 3–5 concise bullet points. One idea per bullet. -->
+          <li>First key takeaway — one sentence, concrete and memorable.</li>
+          <li>Second key takeaway.</li>
+          <li>Third key takeaway.</li>
+          <li>Fourth key takeaway (optional).</li>
+          <li>Fifth key takeaway (optional).</li>
+        </ul>
+      </aside>
+
+      <!-- ── Reflection Questions — EDIT these ── -->
+      <div class="article-questions" aria-label="Questions to consider">
+        <p class="questions-label">Something to Think About</p>
+        <ul class="questions-list">
+          <!-- EDIT: 1–2 questions that make the reader reflect. -->
+          <li>
+            First question — something that invites the reader to connect the
+            article to their own experience or thinking.
+          </li>
+          <li>
+            Second question (optional) — a broader or more challenging follow-up.
+          </li>
+        </ul>
+      </div>
+
+      <nav class="article-footer-nav" aria-label="Article navigation">
+        <a href="../index.html#insights">← Back to Insights</a>
+        <a href="../index.html#contact">Get in touch</a>
+      </nav>
+
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p class="footer-wordmark">Anvi Ahuja</p>
+      <p class="footer-copy">
+        © <span id="yr"></span>&ensp;·&ensp;Marketing · Analytics · Strategy
+      </p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+
+  <!--
+  ══════════════════════════════════════════════════════════════
+  HOMEPAGE CARD SNIPPET — copy this into index.html
+
+  When you publish a new article:
+  1. Move the existing .i-featured block into .i-grid (at the top)
+  2. Paste THIS block in its place as the new .i-featured
+
+  ── FEATURED CARD (paste at top of insights section) ──────────
+
+  <a href="articles/YOUR-SLUG.html"
+     class="i-featured reveal"
+     aria-labelledby="ins-NEW-title">
+    <div class="i-feat-img-wrap">
+      <img
+        src="YOUR-UNSPLASH-URL?w=1400&q=80&auto=format&fit=crop"
+        alt="EDIT: Alt text for your article image"
+        class="i-feat-img"
+        loading="eager"
+      />
+    </div>
+    <div class="i-feat-body">
+      <div class="i-meta">
+        <span class="i-cat">CATEGORY</span>
+        <span class="i-sep" aria-hidden="true">·</span>
+        <time class="i-date" datetime="YYYY-MM-DD">DD Month YYYY</time>
+        <span class="i-sep" aria-hidden="true">·</span>
+        <span class="i-read">X min read</span>
+      </div>
+      <h3 class="i-feat-title" id="ins-NEW-title">
+        YOUR ARTICLE TITLE
+      </h3>
+      <p class="i-feat-teaser">
+        EDIT: 2–3 sentences that tease the article. Make the reader curious.
+        Don't give everything away. Don't start with the first paragraph.
+      </p>
+      <span class="i-read-link" aria-hidden="true">Read Article →</span>
+    </div>
+  </a>
+
+  ── GRID CARD (paste at top of .i-grid for the demoted article) ─
+
+  <a href="articles/YOUR-SLUG.html"
+     class="ic reveal"
+     aria-labelledby="ins-NEW-title">
+    <div class="ic-img-wrap">
+      <img
+        src="YOUR-IMAGE-URL?w=800&q=80&auto=format&fit=crop"
+        alt="EDIT: Alt text"
+        class="ic-img"
+        loading="lazy"
+      />
+    </div>
+    <div class="ic-body">
+      <div class="i-meta">
+        <span class="i-cat">CATEGORY</span>
+        <span class="i-sep" aria-hidden="true">·</span>
+        <time class="i-date" datetime="YYYY-MM-DD">DD Month YYYY</time>
+        <span class="i-sep" aria-hidden="true">·</span>
+        <span class="i-read">X min read</span>
+      </div>
+      <h3 class="ic-title" id="ins-NEW-title">YOUR ARTICLE TITLE</h3>
+      <p class="ic-teaser">
+        EDIT: 1–2 sentence teaser for the grid card.
+      </p>
+      <span class="ic-link">Read Article →</span>
+    </div>
+  </a>
+
+  ══════════════════════════════════════════════════════════════
+  -->
+
+</body>
+</html>
