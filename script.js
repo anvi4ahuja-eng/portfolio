@@ -40,8 +40,13 @@ function setTheme(theme) {
 
 function initTheme() {
   const saved = localStorage.getItem(THEME_KEY);
-  if (saved === 'dark' || saved === 'light') { setTheme(saved); return; }
-  setTheme(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+  if (saved === 'dark' || saved === 'light') {
+    setTheme(saved);
+  } else {
+    // Always start new visitors in light mode
+    setTheme('light');
+  }
 }
 
 if (themeBtn) {
@@ -50,13 +55,7 @@ if (themeBtn) {
   });
 }
 
-// Follow OS preference only if user hasn't manually chosen
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-  if (!localStorage.getItem(THEME_KEY)) setTheme(e.matches ? 'dark' : 'light');
-});
-
 initTheme();
-
 
 /* ─────────────────────────────────────────────────────────────
    2. NAVIGATION — glass on scroll + active section highlight

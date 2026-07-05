@@ -114,10 +114,10 @@
   --ink-3: #A58C95;
   --ink-4: #6D5C63;
 
-  --mauve: #6A1D3B;
---mauve-h: #4F152C;
---mauve-soft: rgba(106,29,59,.10);
---mauve-mid: rgba(106,29,59,.18);
+ --mauve: #7A2548;
+--mauve-h: #5B1A36;
+--mauve-soft: rgba(117,35,68,.10);
+--mauve-mid: rgba(117,35,68,.18);
 
   --sage: #E9DDE3;
   --sage-soft: rgba(233,221,227,.10);
@@ -849,6 +849,52 @@ button {
   animation-delay: .44s;
 }
 
+/* Hero Illustration */
+.hero-illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+@media (min-width: 992px) {
+  .hero-illustration {
+    position: absolute;
+    right: 0;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 46%;
+    margin-top: 0;
+    justify-content: flex-end;
+    pointer-events: none;
+  }
+
+  .hero-img {
+    width: 100%;
+    max-width: 650px;
+  }
+}
+
+.hero-img {
+  display: block;
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+}
+
+.hero-img-dark {
+  display: none;
+}
+
+[data-theme="dark"] .hero-img-light {
+  display: none;
+}
+
+[data-theme="dark"] .hero-img-dark {
+  display: block;
+}
+
+/* Desktop */
 
 /* ── 9. ABOUT ─────────────────────────────────────────────── */
 
