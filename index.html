@@ -100,12 +100,26 @@
             and the decisions that sit between them.
           </p>
           <div class="hero-actions">
-            <a href="#work" class="btn btn-primary">View My Work</a>
+            <a href="#insights" class="btn btn-primary">Explore Insights</a>
             <a href="assets/resume.pdf" download class="btn btn-ghost">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
               Download Resume
             </a>
           </div>
+        </div>
+
+              <div class="hero-illustration">
+          <img
+            src="assets/images/hero-light.png"
+            alt="Marketing illustration"
+            class="hero-img hero-img-light"
+          />
+
+          <img
+            src="assets/images/hero-dark.png"
+            alt="Marketing illustration"
+            class="hero-img hero-img-dark"
+          />
         </div>
 
       </div>
@@ -167,7 +181,7 @@
     <!-- ─────────────────────────────────────────────────
          WORK — Premium case-study cards
     ───────────────────────────────────────────────── -->
-    <section class="section work-section" id="work" aria-labelledby="work-heading">
+    <section class="section work-section" id="work" aria-labelledby="work-heading" hidden>
       <div class="container">
 
         <header class="section-header reveal">
@@ -177,155 +191,11 @@
 
         <div class="work-grid">
 
-          <!-- Project 1 — featured, spans full width -->
-          <article class="work-card work-card-featured reveal" aria-labelledby="wc1-title">
-            <div class="wc-img-wrap">
-              <!-- Editorial: minimal desk with laptop — Olia Gozha, Unsplash -->
-              <img
-                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1400&q=80&auto=format&fit=crop"
-                alt="Clean desk workspace with laptop — marketing analytics"
-                class="wc-img"
-                loading="eager"
-              />
-              <span class="wc-badge">Analytics</span>
-            </div>
-            <div class="wc-body">
-              <div class="wc-tags">
-                <span class="tag">Tableau</span>
-                <span class="tag">Excel</span>
-                <span class="tag">Python</span>
-              </div>
-              <h3 class="wc-title" id="wc1-title">Marketing Analytics Dashboard</h3>
-              <p class="wc-desc">
-                A multi-channel performance dashboard tracking campaign ROI, customer
-                segmentation and conversion funnels. Built to give marketing teams a
-                single source of truth across paid, organic and email channels — with
-                clear visualisations that actually get used in decisions.
-              </p>
-              <a href="#" class="wc-link" aria-label="View Marketing Analytics Dashboard">
-                View Project <span aria-hidden="true">→</span>
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 2 -->
-          <article class="work-card reveal" aria-labelledby="wc2-title">
-            <div class="wc-img-wrap">
-              <!-- Editorial: premium brand books — Unsplash -->
-              <img
-                src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=900&q=80&auto=format&fit=crop"
-                alt="Premium design books on a desk — brand strategy"
-                class="wc-img"
-                loading="lazy"
-              />
-              <span class="wc-badge">Branding</span>
-            </div>
-            <div class="wc-body">
-              <div class="wc-tags">
-                <span class="tag">Brand Research</span>
-                <span class="tag">Consumer Psychology</span>
-              </div>
-              <h3 class="wc-title" id="wc2-title">Brand Strategy Analysis</h3>
-              <p class="wc-desc">
-                Positioning, perception and purchase behaviour analysed across FMCG
-                competitors — with strategic recommendations for differentiation in
-                crowded categories.
-              </p>
-              <a href="#" class="wc-link" aria-label="View Brand Strategy Analysis">
-                View Project <span aria-hidden="true">→</span>
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 3 -->
-          <article class="work-card reveal delay-1" aria-labelledby="wc3-title">
-            <div class="wc-img-wrap">
-              <!-- Editorial: data charts — Carlos Muza, Unsplash -->
-              <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&q=80&auto=format&fit=crop"
-                alt="Data visualisation charts on screen — Tableau"
-                class="wc-img"
-                loading="lazy"
-              />
-              <span class="wc-badge">Data Viz</span>
-            </div>
-            <div class="wc-body">
-              <div class="wc-tags">
-                <span class="tag">Tableau</span>
-                <span class="tag">SQL</span>
-              </div>
-              <h3 class="wc-title" id="wc3-title">Tableau Dashboards</h3>
-              <p class="wc-desc">
-                A collection of dashboards translating dense datasets into clear
-                visual stories — covering sales trends, customer journeys and
-                regional performance comparisons.
-              </p>
-              <a href="#" class="wc-link" aria-label="View Tableau Dashboards">
-                View Project <span aria-hidden="true">→</span>
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 4 -->
-          <article class="work-card reveal" aria-labelledby="wc4-title">
-            <div class="wc-img-wrap">
-              <!-- Editorial: library books — Janko Ferlič, Unsplash -->
-              <img
-                src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=900&q=80&auto=format&fit=crop"
-                alt="Library books — business and consumer research"
-                class="wc-img"
-                loading="lazy"
-              />
-              <span class="wc-badge">Research</span>
-            </div>
-            <div class="wc-body">
-              <div class="wc-tags">
-                <span class="tag">Jamovi</span>
-                <span class="tag">Orange</span>
-                <span class="tag">Statistical Analysis</span>
-              </div>
-              <h3 class="wc-title" id="wc4-title">Consumer Behaviour Research</h3>
-              <p class="wc-desc">
-                Statistical research into purchase-intent drivers, using regression
-                and factor analysis in Jamovi to isolate the variables that actually
-                move buying decisions.
-              </p>
-              <a href="#" class="wc-link" aria-label="View Consumer Behaviour Research">
-                View Project <span aria-hidden="true">→</span>
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 5 -->
-          <article class="work-card reveal delay-1" aria-labelledby="wc5-title">
-            <div class="wc-img-wrap">
-              <!-- Editorial: minimal modern office interior — Annie Spratt, Unsplash -->
-              <img
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80&auto=format&fit=crop"
-                alt="Minimal modern office interior — people operations"
-                class="wc-img"
-                loading="lazy"
-              />
-              <span class="wc-badge">HR & People</span>
-            </div>
-            <div class="wc-body">
-              <div class="wc-tags">
-                <span class="tag">HR Operations</span>
-                <span class="tag">Process Design</span>
-                <span class="tag">Excel</span>
-              </div>
-              <h3 class="wc-title" id="wc5-title">People Operations — Case Study</h3>
-              <p class="wc-desc">
-                A case study examining how recruitment, onboarding and engagement
-                design connect to retention outcomes — drawn from hands-on work in
-                a fast-moving consumer brand environment.
-              </p>
-              <a href="#" class="wc-link" aria-label="View People Operations Case Study">
-                View Project <span aria-hidden="true">→</span>
-              </a>
-            </div>
-          </article>
-
+         
+         
+         
+         
+         
         </div>
       </div>
     </section>
@@ -410,106 +280,8 @@
 
           <!-- Placeholder cards — replace with real articles as you publish -->
 
-          <!-- Future Article Slot 1 -->
-          <article class="ic reveal" aria-labelledby="ins2-title">
-            <div class="ic-img-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80&auto=format&fit=crop"
-                alt="Premium coffee — pricing as a brand signal"
-                class="ic-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="ic-body">
-              <div class="i-meta">
-                <span class="i-cat">Pricing Strategy</span>
-                <span class="i-sep" aria-hidden="true">·</span>
-                <span class="i-read">Coming soon</span>
-              </div>
-              <h3 class="ic-title" id="ins2-title">Starbucks' Pricing Strategy</h3>
-              <p class="ic-teaser">
-                How a coffee company convinced the world to pay four times the market
-                rate — and why the price itself became part of the product.
-              </p>
-              <span class="i-coming">Article coming soon</span>
-            </div>
-          </article>
-
-          <!-- Future Article Slot 2 -->
-          <article class="ic reveal delay-1" aria-labelledby="ins3-title">
-            <div class="ic-img-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&q=80&auto=format&fit=crop"
-                alt="Nike sneaker — brand identity built on belief"
-                class="ic-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="ic-body">
-              <div class="i-meta">
-                <span class="i-cat">Marketing</span>
-                <span class="i-sep" aria-hidden="true">·</span>
-                <span class="i-read">Coming soon</span>
-              </div>
-              <h3 class="ic-title" id="ins3-title">Lessons from Nike Branding</h3>
-              <p class="ic-teaser">
-                Nike's most powerful tool isn't its product or its budget — it's a
-                three-word belief that turned a shoe company into a movement.
-              </p>
-              <span class="i-coming">Article coming soon</span>
-            </div>
-          </article>
-
-          <!-- Future Article Slot 3 -->
-          <article class="ic reveal" aria-labelledby="ins4-title">
-            <div class="ic-img-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=800&q=80&auto=format&fit=crop"
-                alt="Rural morning — heritage and consistency in brand trust"
-                class="ic-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="ic-body">
-              <div class="i-meta">
-                <span class="i-cat">Brand Trust</span>
-                <span class="i-sep" aria-hidden="true">·</span>
-                <span class="i-read">Coming soon</span>
-              </div>
-              <h3 class="ic-title" id="ins4-title">How Amul Built Trust</h3>
-              <p class="ic-teaser">
-                Seven decades. One cooperative. Millions of households. What Amul
-                understood about consistency that most brands never figure out.
-              </p>
-              <span class="i-coming">Article coming soon</span>
-            </div>
-          </article>
-
-          <!-- Future Article Slot 4 -->
-          <article class="ic reveal delay-1" aria-labelledby="ins5-title">
-            <div class="ic-img-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&q=80&auto=format&fit=crop"
-                alt="Urban city — competitive strategy in crowded markets"
-                class="ic-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="ic-body">
-              <div class="i-meta">
-                <span class="i-cat">Competitive Strategy</span>
-                <span class="i-sep" aria-hidden="true">·</span>
-                <span class="i-read">Coming soon</span>
-              </div>
-              <h3 class="ic-title" id="ins5-title">Zomato vs Swiggy</h3>
-              <p class="ic-teaser">
-                Two companies, nearly identical services, very different personalities.
-                What brand voice actually does in a market where the product is the same.
-              </p>
-              <span class="i-coming">Article coming soon</span>
-            </div>
-          </article>
-
+        
+        
         </div>
       </div>
     </section>
